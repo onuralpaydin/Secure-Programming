@@ -1,0 +1,12 @@
+#include <stdio.h> //header file library that lets us work with input and output functions
+
+int main()
+{
+    // nother thing that always appear in a C program is main(). This is called a function. Any code inside its curly brackets {} will be executed.
+    //  The compiler ignores white spaces. However, multiple lines makes the code more readable.
+    printf("Hello World!\n"); // a function used to output/print text to the screen
+    // When you are working with text, it must be wrapped inside double quotations marks "".
+    // printf(end statements with ;); //will not work . Expects ""
+    printf("end statements with ;"); // a function used to output/print text to the screen
+    return 0;//return 0 ends the main() function.
+}
