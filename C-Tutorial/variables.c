@@ -6,6 +6,7 @@ int main()
     //char stores single characters 'a' , 'B' 
 
     int intVariable = 19;
+    int intVariable2 = 10;
     float floatVariable = 19.19;
     char charVariable='a';
     // printf(intVariable); invalid conversion from 'int' to 'const char*' [-fpermissive]gcc
@@ -17,5 +18,6 @@ Format specifiers are used together with the printf() function to tell the compi
 printf("int value: %d \n",intVariable);
 printf("float value :%f \n",floatVariable);
 printf("char value: %c \n",charVariable);
+printf("int sum: %d \n",intVariable+intVariable2);
 
 }
