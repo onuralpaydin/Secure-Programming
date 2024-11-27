@@ -20,6 +20,12 @@ argument of type "float" is incompatible with parameter of type "const char *"C/
     printf("char value: %c \n", charVariable);
     printf("int sum: %d \n", intVariable + intVariable2);
     printf("My favorite number is: %d", 15);
+    // %d or %i	int
+    // %f or %F	float
+    // %lf	double
+    // %c	char
+    // %s	Used for strings (text)
+
     // Assign-reassign variables
     int myNum;
     myNum = intVariable;
