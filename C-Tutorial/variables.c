@@ -1,5 +1,6 @@
 #include <stdio.h>
-//standard input output useful functions
+// standard input output useful functions
+#include <stdbool.h>
 int main()
 {
     // int stores integers without decimals =>19
@@ -11,12 +12,13 @@ int main()
     float floatVariable = 19.19191919191;
     char charVariable = 'a';
     // strings are technically objects. C is not object oriented language. We will use char arrays for strings
-    char name[]="Onur Alp Aydın"; //array of characters
+    char name[] = "Onur Alp Aydın"; // array of characters
     // printf(intVariable); invalid conversion from 'int' to 'const char*' [-fpermissive]gcc
     /* printf(floatVariable);cannot convert 'float' to 'const char*'gcc
 argument of type "float" is incompatible with parameter of type "const char *"C/C++(167)*/
     // printf(charVariable);invalid conversion from 'char' to 'const char*' [-fpermissive]gcc
-    double doubleVariable=3.141592653589793; //8 bytes(64 bits of precision )15-16 digits.
+    double doubleVariable = 3.141592653589793; // 8 bytes(64 bits of precision )15-16 digits.
+    bool boolValue = true;
     /*Format Specifiers
     Format specifiers are used together with the printf() function to tell the compiler what type of data the variable is storing. It is basically a placeholder for the variable value.*/
     // %d or %i	int
@@ -29,12 +31,11 @@ argument of type "float" is incompatible with parameter of type "const char *"C/
     printf("char value: %c \n", charVariable);
     printf("int sum: %d \n", intVariable + intVariable2);
     printf("My favorite number is: %d \n", 15);
-    printf("display string %s \n",name);
-    printf("display double variable %lf \n",doubleVariable);
-    printf("display more digits double  %0.15lf \n",doubleVariable);//more precise
-    printf("display more digits float  %0.15f \n",floatVariable);
-
-
+    printf("display string %s \n", name);
+    printf("display double variable %lf \n", doubleVariable);
+    printf("display more digits double  %0.15lf \n", doubleVariable); // more precise
+    printf("display more digits float  %0.15f \n", floatVariable);
+    printf("boolean:  %d \n", boolValue);
 
     // Assign-reassign variables
     int myNum;
@@ -50,7 +51,7 @@ argument of type "float" is incompatible with parameter of type "const char *"C/
     printf("%d \n", a + b + c);
     printf("x+y+z=%d \n", x + y + z);
     printf("x+y+z=%d \n", x + y + z);
-    printf("\" escape char example \"");
+    printf("\" escape char example \" \n");
     // naming conventions
     /*
     The general rules for naming variables are:
@@ -60,6 +61,18 @@ argument of type "float" is incompatible with parameter of type "const char *"C/
     Names cannot contain whitespaces or special characters like !, #, %, etc.
     Reserved words (such as int) cannot be used as names
     */
+   unsigned char unsignedCharVariable=99;//(0 to 255)
+//    signed value -128 to 127
+   printf("%d \n",unsignedCharVariable);
+   printf("%c \n",unsignedCharVariable);//converts int to char according to ASCII table
+   short shortVariable=31456;//-32768 to 32767
+   short int shortVariable2=-31456;
+   unsigned short unsignedShortVariable=12345;
+   unsigned short int unsignedShortVariable2=12345;
+   printf("short value: %d \n",shortVariable);//
+   printf("short value: %d \n",shortVariable2);//
+   printf("short value: %d \n",unsignedShortVariable);//
+   printf("short value: %d \n",unsignedShortVariable2);//
     return 0;
     // exit code of program
     // exited with code=1 means you have error
