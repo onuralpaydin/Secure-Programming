@@ -1,4 +1,5 @@
 #include <stdio.h>
+//standard input output useful functions
 int main()
 {
     // int stores integers without decimals =>19
@@ -35,6 +36,8 @@ argument of type "float" is incompatible with parameter of type "const char *"C/
     int x = 1, y = 2, z = 33;
     int a, b, c;
     a = b = c = 6;
+    // print("%d \n", a + b + c);
+    // error exited with code=1;
     printf("%d \n", a + b + c);
     printf("x+y+z=%d \n", x + y + z);
     printf("x+y+z=%d \n", x + y + z);
@@ -48,4 +51,6 @@ argument of type "float" is incompatible with parameter of type "const char *"C/
     Reserved words (such as int) cannot be used as names
     */
     return 0;
+    // exit code of program
+    // exited with code=1 means you have error
 }
