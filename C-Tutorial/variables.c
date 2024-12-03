@@ -41,6 +41,7 @@ argument of type "float" is incompatible with parameter of type "const char *"C/
     printf("%d \n", a + b + c);
     printf("x+y+z=%d \n", x + y + z);
     printf("x+y+z=%d \n", x + y + z);
+    printf("\" escape char example \"");
     // naming conventions
     /*
     The general rules for naming variables are:
