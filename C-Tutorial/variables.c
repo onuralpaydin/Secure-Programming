@@ -26,6 +26,8 @@ argument of type "float" is incompatible with parameter of type "const char *"C/
     // %lf	double
     // %c	char
     // %s	Used for strings (text)
+    // %lld long long signed
+    // %llu long long unsigned
     printf("int value: %d \n", intVariable);
     printf("float value :%f \n", floatVariable);
     printf("char value: %c \n", charVariable);
@@ -83,6 +85,20 @@ unsigned long long int longValue3=709843278091321231UL;
    printf("long value: %lld \n",longValue);
    printf("unsigned long value: %llu \n",longValue2);
    printf("long long value: %llu \n",longValue3);
+float float1=1.23;
+float float2=10.23;
+float float3=100.23;
+printf("float1: %6.2f \n",float1);
+printf("float2: %6.2f \n",float2);
+printf("float3: %6.2f \n",float3);
+printf("float1: %-6.2f \n",float1);
+printf("float2: %-6.2f \n",float2);
+printf("float3: %-6.2f \n",float3);
+/*
+%.1 decimal precision
+%1 minimum field width
+%- align left
+ */
     return 0;
     // exit code of program
     // exited with code=1 means you have error
