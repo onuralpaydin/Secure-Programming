@@ -69,10 +69,20 @@ argument of type "float" is incompatible with parameter of type "const char *"C/
    short int shortVariable2=-31456;
    unsigned short unsignedShortVariable=12345;
    unsigned short int unsignedShortVariable2=12345;
-   printf("short value: %d \n",shortVariable);//
-   printf("short value: %d \n",shortVariable2);//
-   printf("short value: %d \n",unsignedShortVariable);//
-   printf("short value: %d \n",unsignedShortVariable2);//
+   printf("short value: %d \n",shortVariable);
+   printf("short value: %d \n",shortVariable2);
+   printf("short value: %d \n",unsignedShortVariable);
+   printf("short value: %d \n",unsignedShortVariable2);
+    // warning: overflow in conversion from 'long long unsigned int' to 'long int' changes value from '7098432780' 
+//    long int longValue=7098432780U;
+// unsigned long int longValue2=70984327809UL;
+//added u for warning U.
+   long long int longValue=7098432780U;
+unsigned long long int longValue2=70984327809UL;
+unsigned long long int longValue3=70984327809UL;
+   printf("long value: %lld \n",longValue);
+   printf("unsigned long value: %llu \n",longValue2);
+   printf("long long value: %llu \n",longValue3);
     return 0;
     // exit code of program
     // exited with code=1 means you have error
