@@ -77,9 +77,9 @@ argument of type "float" is incompatible with parameter of type "const char *"C/
 //    long int longValue=7098432780U;
 // unsigned long int longValue2=70984327809UL;
 //added u for warning U.
-   long long int longValue=7098432780U;
-unsigned long long int longValue2=70984327809UL;
-unsigned long long int longValue3=70984327809UL;
+   long long int longValue=-7098432780132123U;
+unsigned long long int longValue2=70984327809132123UL;
+unsigned long long int longValue3=709843278091321231UL;
    printf("long value: %lld \n",longValue);
    printf("unsigned long value: %llu \n",longValue2);
    printf("long long value: %llu \n",longValue3);
